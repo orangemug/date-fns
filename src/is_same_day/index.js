@@ -21,9 +21,9 @@ import startOfDay from '../start_of_day/index.js'
  * )
  * //=> true
  */
-export default function isSameDay (dirtyDateLeft, dirtyDateRight, options) {
-  var dateLeftStartOfDay = startOfDay(dirtyDateLeft, options)
-  var dateRightStartOfDay = startOfDay(dirtyDateRight, options)
+export default function isSameDay (dirtyDateLeft, dirtyDateRight, dirtyOptions) {
+  var dateLeftStartOfDay = startOfDay(dirtyDateLeft, dirtyOptions)
+  var dateRightStartOfDay = startOfDay(dirtyDateRight, dirtyOptions)
 
   return dateLeftStartOfDay.getTime() === dateRightStartOfDay.getTime()
 }

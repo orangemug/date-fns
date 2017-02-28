@@ -23,9 +23,9 @@ import startOfISOYear from '../start_of_iso_year/index.js'
  * )
  * //=> true
  */
-export default function isSameISOYear (dirtyDateLeft, dirtyDateRight, options) {
-  var dateLeftStartOfYear = startOfISOYear(dirtyDateLeft, options)
-  var dateRightStartOfYear = startOfISOYear(dirtyDateRight, options)
+export default function isSameISOYear (dirtyDateLeft, dirtyDateRight, dirtyOptions) {
+  var dateLeftStartOfYear = startOfISOYear(dirtyDateLeft, dirtyOptions)
+  var dateRightStartOfYear = startOfISOYear(dirtyDateRight, dirtyOptions)
 
   return dateLeftStartOfYear.getTime() === dateRightStartOfYear.getTime()
 }
