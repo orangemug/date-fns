@@ -1,0 +1,13 @@
+// @flow
+
+declare module.exports: (
+  date: Date | string | number,
+  formats: {
+    sameDay:  string,
+    nextDay:  string,
+    nextWeek: string,
+    lastDay:  string,
+    lastWeek: string,
+    sameElse: string
+  }
+) => string
